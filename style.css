@@ -1,0 +1,567 @@
+/* ================================
+   GENERAL STYLING
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color:#12355b;
+    background-image: url("school.jpg.jpg");
+    background-attachment: fixed;
+
+    line-height: 1.6;
+    
+    
+}
+.main{
+    border: 1px solid;
+   
+}
+
+
+/* ================================
+   NAVIGATION BAR
+================================ */
+
+header {
+    background-color: #12355b;
+
+    color: white;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.navbar {
+    width: 90%;
+
+    margin: auto;
+
+    min-height: 70px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px;
+}
+
+
+.nav-links a:hover {
+    background-color: #1f6aa5;
+
+    border-radius: 5px;
+}
+#kuhusu{
+    background-color: yellowgreen;
+    border-radius: 3rem;
+    width: 500px;
+    text-align: center;
+    margin-left:300px;
+    
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #dcecf9,
+        #ffffff
+    );
+
+    padding: 50px 20px;
+}
+
+
+.hero-content {
+    max-width: 800px;
+}
+
+
+.hero h1 {
+    color: #12355b;
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 19px;
+
+    margin-bottom: 30px;
+}
+#para{
+    color: #12355b;
+    background-color:yellowgreen;
+    border-radius: 3rem;
+
+}
+
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.btn {
+    display: inline-block;
+
+    background-color: #12355b;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.btn:hover {
+    background-color: red;
+}
+
+
+.clear-btn {
+    padding: 12px 20px;
+
+    background-color: #777;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.clear-btn:hover {
+    background-color: #555;
+}
+
+
+/* ================================
+   GENERAL SECTIONS
+================================ */
+
+.section {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 0;
+}
+
+
+.section h2 {
+    text-align: center;
+
+    color: #12355b;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+
+.section > p {
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 30px;
+
+}
+
+
+.card {
+    background-color: #12355b;
+
+    padding: 25px;
+
+
+    border-radius: 3rem;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.5);
+    background: yellowgreen;
+}
+
+
+.card h3 {
+    color:white;
+
+    margin-bottom: 10px;
+    
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+#studentForm {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ddd;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.1);
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+
+    border-color: #12355b;
+}
+
+
+.form-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+#Rform{
+    background-color:whitesmoke;
+    border-radius: 3rem;
+
+
+}
+
+
+/* ================================
+   SEARCH
+================================ */
+
+.search-box {
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+
+.search-box input {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+/* ================================
+   STUDENTS TABLE
+================================ */
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.1);
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 800px;
+}
+
+
+th,
+td {
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: center;
+}
+
+
+th {
+    background-color: #12355b;
+
+    color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+
+tr:hover {
+    background-color: #eaf3fa;
+}
+#Sinfo{
+    background-color: #dcecf9;
+    border-radius: 0.5rem;
+}
+
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.edit-btn {
+    background-color: #f39c12;
+
+    color: white;
+
+    border: none;
+
+    padding: 7px 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin: 2px;
+}
+
+
+.delete-btn {
+    background-color: #e74c3c;
+
+    color: white;
+
+    border: none;
+
+    padding: 7px 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin: 2px;
+}
+
+
+.edit-btn:hover {
+    background-color: #d68910;
+}
+
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+
+/* ================================
+   EMPTY MESSAGE
+================================ */
+
+#emptyMessage {
+    text-align: center;
+
+    color:white;
+    background-color: #12355b;
+
+    margin-top: 20px;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+    text-align: center;
+
+    background-color: #eef4f9;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #12355b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 15px 0;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 5px;
+
+        margin-top: 10px;
+    }
+
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+}
